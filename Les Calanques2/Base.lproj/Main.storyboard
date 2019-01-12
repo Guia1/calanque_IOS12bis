@@ -27,6 +27,51 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="176" id="lJU-Hb-vNU" customClass="CalanqueCell" customModule="Les_Calanques2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="176"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lJU-Hb-vNU" id="89d-T0-UJ9">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="175.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-ij-c1K" customClass="ImageRonde" customModule="Les_Calanques2" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="25.5" width="125" height="125"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="125" id="CXK-Ft-zpJ"/>
+                                                <constraint firstAttribute="height" constant="125" id="tpW-gZ-Sos"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ID-12-nKm">
+                                            <rect key="frame" x="16" y="15" width="343" height="150"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gnq-py-wzt">
+                                                    <rect key="frame" x="150" y="8" width="185" height="134"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="gnq-py-wzt" firstAttribute="top" secondItem="1ID-12-nKm" secondAttribute="top" constant="8" id="PiV-4k-BzF"/>
+                                                <constraint firstAttribute="bottom" secondItem="gnq-py-wzt" secondAttribute="bottom" constant="8" id="WkV-Kq-LiG"/>
+                                                <constraint firstItem="gnq-py-wzt" firstAttribute="leading" secondItem="1ID-12-nKm" secondAttribute="leading" constant="150" id="bcL-P8-6YD"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="bdA-X5-ZzI"/>
+                                                <constraint firstAttribute="trailing" secondItem="gnq-py-wzt" secondAttribute="trailing" constant="8" id="uLQ-Vl-6iH"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="GrS-ij-c1K" firstAttribute="centerY" secondItem="89d-T0-UJ9" secondAttribute="centerY" id="2SD-6Y-kfb"/>
+                                        <constraint firstItem="1ID-12-nKm" firstAttribute="leading" secondItem="89d-T0-UJ9" secondAttribute="leadingMargin" id="38U-5t-oqC"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1ID-12-nKm" secondAttribute="trailing" id="cb1-vc-qkb"/>
+                                        <constraint firstItem="GrS-ij-c1K" firstAttribute="leading" secondItem="89d-T0-UJ9" secondAttribute="leadingMargin" constant="8" id="jqf-hB-yyJ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1ID-12-nKm" secondAttribute="bottom" id="pjM-T9-he3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="yJP-QD-nDm" id="U73-L4-fR8"/>
@@ -37,7 +82,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axj-Sr-Rsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="0.0"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-0.44977511244377816"/>
         </scene>
         <!--Table View 1-->
         <scene sceneID="hNz-n2-bh7">
